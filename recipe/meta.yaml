@@ -1,7 +1,7 @@
 {%set name = "flake8" %}
-{%set version = "2.6.2" %}
+{%set version = "3.0.3" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "231cd86194aaec4bdfaa553ae1a1cd9b7b4558332fbc10136c044940d587a778" %}
+{%set hash_val = "fa8ebbdc9a78991af150b86cd0e3377361586ce7d1fed0079f0077f2ada227ec" %}
 
 package:
   name: {{ name }}
