@@ -1,4 +1,4 @@
-{% set version = "3.9.2" %}
+{% set version = "4.0.1" %}
 
 package:
   name: flake8
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/f/flake8/flake8-{{ version }}.tar.gz
-  sha256: 07528381786f2a6237b061f6e96610a4167b226cb926e2aa2b6b1d78057c576b
+  sha256: 806e034dda44114815e23c16ef92f95c91e4c71100ff52813adf7132a6ad870d
 
 build:
   number: 0
@@ -17,14 +17,14 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.6
     - pip
     - setuptools >=30.0.0
   run:
     - mccabe >=0.6.0,<0.7.0
-    - pycodestyle >=2.7.0,<2.8.0
-    - pyflakes >=2.3.0,<2.4.0
-    - python >=3.5
+    - pycodestyle >=2.8.0,<2.9.0
+    - pyflakes >=2.4.0,<2.5.0
+    - python >=3.6
     - importlib-metadata
     - setuptools >=30.0.0
 test:
