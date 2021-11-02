@@ -25,7 +25,7 @@ requirements:
     - pycodestyle >=2.8.0,<2.9.0
     - pyflakes >=2.4.0,<2.5.0
     - python >=3.6
-    - importlib-metadata
+    - importlib-metadata <4.3
     - setuptools >=30.0.0
 test:
   imports:
