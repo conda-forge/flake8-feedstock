@@ -1,4 +1,4 @@
-{% set version = "5.0.4" %}
+{% set version = "6.0.0" %}
 
 package:
   name: flake8
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/f/flake8/flake8-{{ version }}.tar.gz
-  sha256: 6fbe320aad8d6b95cec8b8e47bc933004678dc63095be98528b7bdd2a9f510db
+  sha256: c61007e76655af75e6785a931f452915b371dc48f56efd765247c8fe68f2b181
 
 build:
   number: 0
@@ -17,16 +17,14 @@ build:
 
 requirements:
   host:
-    - python >=3.6.1
     - pip
-    - setuptools >=30.0.0
+    - python >=3.8.1
+    - setuptools
   run:
     - mccabe >=0.7.0,<0.8.0
-    - pycodestyle >=2.9.0,<2.10.0
-    - pyflakes >=2.5.0,<2.6.0
-    - python >=3.6.1
-    - importlib-metadata >=1.1.0
-    - setuptools >=30.0.0
+    - pycodestyle >=2.10.0,<2.11.0
+    - pyflakes >=3.0.0,<3.1.0
+    - python >=3.8.1
 test:
   imports:
     - flake8
@@ -35,10 +33,13 @@ test:
     - tests/integration
     - tests/unit
     - setup.py
-
+  requires:
+    - pip
   commands:
     - flake8 --ignore=D203,W503,E203 src/flake8 tests/integration tests/unit setup.py  # [unix]
     - flake8 --ignore=D203,W503,E203 src\\flake8 tests\\integration tests\\unit setup.py  # [win]
+    - pip list
+    - pip check
 
 about:
   home: http://flake8.pycqa.org/
@@ -47,12 +48,12 @@ about:
   license_file: LICENSE
   summary: Your Tool For Style Guide Enforcement
   doc_url: http://flake8.pycqa.org/
-  dev_url: https://gitlab.com/pycqa/flake8
+  dev_url: https://github.com/PyCQA/flake8
 
 extra:
   recipe-maintainers:
-    - sigmavirus24
+    - aydinhan
     - croth1
     - dopplershift
     - goanpeca
-    - aydinhan
+    - sigmavirus24
