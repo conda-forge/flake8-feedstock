@@ -17,9 +17,9 @@ build:
 
 requirements:
   host:
-    - python >=3.8.1
     - pip
-    - setuptools >=30.0.0
+    - python >=3.8.1
+    - setuptools
   run:
     - mccabe >=0.7.0,<0.8.0
     - pycodestyle >=2.10.0,<2.11.0
@@ -52,8 +52,8 @@ about:
 
 extra:
   recipe-maintainers:
-    - sigmavirus24
+    - aydinhan
     - croth1
     - dopplershift
     - goanpeca
-    - aydinhan
+    - sigmavirus24
