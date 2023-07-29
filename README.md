@@ -1,15 +1,15 @@
-About flake8
-============
+About flake8-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/flake8-feedstock/blob/main/LICENSE.txt)
 
 Home: http://flake8.pycqa.org/
 
 Package license: MIT
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/flake8-feedstock/blob/main/LICENSE.txt)
-
 Summary: Your Tool For Style Guide Enforcement
 
-Development: https://gitlab.com/pycqa/flake8
+Development: https://github.com/PyCQA/flake8
 
 Documentation: http://flake8.pycqa.org/
 
