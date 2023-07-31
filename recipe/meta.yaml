@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/PyCQA/flake8/archive/refs/tags/{{ version }}.tar.gz
-  sha256: d5b3857f07c030bdb5bf41c7f53799571d75c4491748a3adcd47de929e34cd23
+  sha256: bcb01efc0c83d3c9362e200b5359fe22e11b859962dd27e5bebf3ada7620ae2f
 
 build:
   number: 0
