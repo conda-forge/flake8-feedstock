@@ -9,7 +9,7 @@ source:
   sha256: e389d1806e1f911b092fd41b7989c751f05eda510bab4ac255b144da96477e2b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
@@ -18,13 +18,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8.1
+    - python {{ python_min }}
     - setuptools
   run:
     - mccabe >=0.7.0,<0.8.0
     - pycodestyle >=2.12.0,<2.13.0
     - pyflakes >=3.2.0,<3.3.0
-    - python >=3.8.1
+    - python >={{ python_min }}
 test:
   imports:
     - flake8
@@ -35,6 +35,7 @@ test:
     - setup.py
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - flake8 --ignore=D203,W503,E203 src/flake8 tests/integration tests/unit setup.py  # [unix]
     - flake8 --ignore=D203,W503,E203 src\\flake8 tests\\integration tests\\unit setup.py  # [win]
