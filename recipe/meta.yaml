@@ -1,4 +1,4 @@
-{% set version = "7.1.1" %}
+{% set version = "7.1.2" %}
 
 package:
   name: flake8
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/PyCQA/flake8/archive/refs/tags/{{ version }}.tar.gz
-  sha256: e389d1806e1f911b092fd41b7989c751f05eda510bab4ac255b144da96477e2b
+  sha256: 60364d3593a8fd8a22f3ffcd751b29d0b61945e975754115bb9316bef157e03e
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
