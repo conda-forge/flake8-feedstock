@@ -1,4 +1,4 @@
-{% set version = "7.3.0" %}
+{% set version = "7.4.1" %}
 
 package:
   name: flake8
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/PyCQA/flake8/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 71a7d2ec4166f83c6fc66e6465a45c49b4565ee29b69f27b335366ce101d8c2b
+  sha256: 10697bfa70871fec59b58c59158254246ba0a13c6fee50bd3a6858329d2a93de
 
 build:
   number: 0
@@ -22,8 +22,8 @@ requirements:
     - setuptools
   run:
     - mccabe >=0.7.0,<0.8.0
-    - pycodestyle >=2.14.0,<2.15.0
-    - pyflakes >=3.4.0,<3.5.0
+    - pycodestyle >=2.15.0,<2.16.0
+    - pyflakes >=4.0.0,<4.1.0
     - python >={{ python_min }}
 test:
   imports:
