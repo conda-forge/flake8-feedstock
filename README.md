@@ -194,6 +194,5 @@ Feedstock Maintainers
 * [@aydinhan](https://github.com/aydinhan/)
 * [@croth1](https://github.com/croth1/)
 * [@dopplershift](https://github.com/dopplershift/)
-* [@goanpeca](https://github.com/goanpeca/)
 * [@sigmavirus24](https://github.com/sigmavirus24/)
 
